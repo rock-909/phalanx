@@ -1,0 +1,67 @@
+# ============================================================
+# MediaRotate.list — 需要轮换出口 IP 的媒体站
+# ------------------------------------------------------------
+# 来源: 原创
+# 许可: MIT
+# 最后验证: 2026-10-14（全量实测存活）
+# ------------------------------------------------------------
+# 用途: 这些站点按 IP 限流或封禁，需要轮换出口。
+# 引用: RULE-SET,...,MediaRotate,no-resolve
+# ============================================================
+
+DOMAIN-SUFFIX,javdb.com
+DOMAIN-SUFFIX,jdbstatic.com
+DOMAIN-SUFFIX,javbus.com
+DOMAIN-SUFFIX,javbus.org
+DOMAIN-SUFFIX,jav321.com
+DOMAIN-SUFFIX,javmost.com
+DOMAIN-SUFFIX,javcl.com
+DOMAIN-SUFFIX,javct.net
+DOMAIN-SUFFIX,javgg.net
+DOMAIN-SUFFIX,javguru.com
+DOMAIN-SUFFIX,javhd.com
+DOMAIN-SUFFIX,javhdz.today
+DOMAIN-SUFFIX,javhd.today
+DOMAIN-SUFFIX,javtrailers.com
+DOMAIN-SUFFIX,netflav.com
+DOMAIN-SUFFIX,123av.com
+DOMAIN-SUFFIX,av01.tv
+DOMAIN-SUFFIX,avmoo.com
+DOMAIN-SUFFIX,supjav.com
+DOMAIN-SUFFIX,supjav.net
+DOMAIN-SUFFIX,javfull.net
+DOMAIN-SUFFIX,jav68.net
+DOMAIN-SUFFIX,caribbeancom.com
+DOMAIN-SUFFIX,1pondo.tv
+DOMAIN-SUFFIX,10musume.com
+DOMAIN-SUFFIX,tokyo-hot.com
+DOMAIN-SUFFIX,heyzo.com
+DOMAIN-SUFFIX,pacopacomama.com
+
+# ── 综合 / 流媒体 ──
+DOMAIN-SUFFIX,missav.com
+DOMAIN-SUFFIX,missav.ws
+DOMAIN-SUFFIX,missav.live
+DOMAIN-SUFFIX,missav.wtf
+DOMAIN-SUFFIX,missav.ai
+DOMAIN-SUFFIX,missav.bz
+DOMAIN-SUFFIX,missav123.com
+DOMAIN-SUFFIX,surrit.com
+DOMAIN-SUFFIX,fourhoi.com
+DOMAIN-SUFFIX,jable.tv
+DOMAIN-SUFFIX,jabletv.com
+DOMAIN-SUFFIX,spankbang.com
+DOMAIN-SUFFIX,eporner.com
+
+# ── 动漫 / 同人 / 论坛 ──
+DOMAIN-SUFFIX,hanime1.me
+DOMAIN-SUFFIX,nhentai.net
+DOMAIN-SUFFIX,18comic.vip
+DOMAIN-SUFFIX,sehuatang.net
+
+# ── 资源 CDN（netflav 页面引用，根路径不响应属正常；逐年换名需定期补） ──
+DOMAIN-SUFFIX,2024cdn.sx
+DOMAIN-SUFFIX,2025cdn.sx
+DOMAIN-SUFFIX,2026cdn.sx
+DOMAIN-SUFFIX,awsimgsrc.dmm.co.jp
+DOMAIN-SUFFIX,pics.dmm.co.jp
