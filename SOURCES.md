@@ -79,6 +79,64 @@ block by IP). Each entry was verified live on 2026-10-14.
 
 ---
 
+## Also consumed directly (not vendored)
+
+The Surge configuration subscribes to these upstream rule sets **directly**,
+without vendoring. They are not stored in this repository, but they are part
+of the same rule pipeline — listed here so the full picture is visible.
+
+### Thoseyearsbrian/Aegis — 17 rule sets
+
+Apache License 2.0 · https://github.com/Thoseyearsbrian/Aegis
+
+| Rule set | Purpose |
+|---|---|
+| `Malware_IOC_Block.list` | Malware indicators of compromise |
+| `Pegasus_Block.list` | NSO Group spyware |
+| `Backdoor_Block.list` | Backdoor domains |
+| `Botnet_Block.list` | Botnet command nodes |
+| `Phishing_Block.list` | Phishing sites |
+| `Scam_Block.list` | Scam sites |
+| `PCDNDomain.list` | PCDN domains |
+| `BehaviorDomain.list` | Behaviour tracking |
+| `Quarantine_Block.list` | Observation quarantine (pre-matching) |
+| `OpenAI.list` | OpenAI + Claude + third-party AI services |
+| `Crypto.list` | Crypto services |
+| `GitHub.list` | GitHub |
+| `Google.list` | Google services |
+| `Apple.list` | Apple services |
+| `RegionalRouting.list` | Regional routing |
+| `China.list` | China direct-connect |
+| `Proxy.list` | General proxy fallback |
+
+### blackmatrix7/ios_rule_script — 19 rule sets
+
+GPL-2.0 · https://github.com/blackmatrix7/ios_rule_script
+
+Streaming: `Netflix` `Disney` `HBO` `Spotify` `YouTube`
+Social: `Telegram` `TikTok` `Facebook` `Twitter` `Weibo` `WeChat`
+Services: `PayPal` `Microsoft` `OneDrive` `Docker` `Cloudflare` `Tesla` `Speedtest` `GoogleSearch`
+
+### Loyalsoldier/surge-rules — 5 rule sets
+
+GPL-3.0 · https://github.com/Loyalsoldier/surge-rules
+
+| Rule set | Purpose |
+|---|---|
+| `private.txt` | Private / LAN addresses |
+| `reject.txt` | Ad blocking (~45,000 rules) |
+| `icloud.txt` | iCloud services |
+| `telegramcidr.txt` | Telegram IP ranges |
+| `cncidr.txt` | China IP ranges |
+
+> **Known issue**: `reject.txt` contains `siftscience.com`, which is an
+> Anthropic anti-fraud service. Blocking it breaks Claude login. The Surge
+> configuration works around this by placing an explicit
+> `DOMAIN-SUFFIX,siftscience.com,"Claude"` rule **before** the `reject.txt`
+> subscription. A permanent fix would require vendoring `reject.txt`.
+
+---
+
 ## License implications
 
 `OverseasAI.list` is derived from a **GPL-2.0** project. Under GPL-2.0,

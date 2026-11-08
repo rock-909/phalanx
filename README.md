@@ -35,8 +35,11 @@ RULE-SET,https://raw.githubusercontent.com/rock-909/phalanx/main/MediaRotate.lis
 
 ## Attribution
 
-See [SOURCES.md](SOURCES.md) for upstream projects, their licenses,
-and exactly what was changed locally.
+See [SOURCES.md](SOURCES.md) for:
+
+- upstream projects for each vendored file, their licenses, and exactly what was changed
+- the rule sets consumed **directly** from upstream (not vendored) — 41 additional
+  rule sets from Aegis, blackmatrix7 and Loyalsoldier that complete the pipeline
 
 ## License
 

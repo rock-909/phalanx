@@ -22,7 +22,8 @@
 # - 来源：官方文档 / 本地流量行为分析 / 手动校验 / 持续自维护
 # - 特征：识别广告投放、广告竞价、广告请求、广告资源分发、广告追踪及明确广告子域等通信特征
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
-# - 维护：https://github.com/Thoseyearsbrian/Aegis
+# - 上游维护：https://github.com/Thoseyearsbrian/Aegis
+# - 本文件维护：rock-909/phalanx（收编后由 tools/vendor-rules.sh 同步）
 # - 更新时间：2026-10-14
 # - 校对时间：2026-10-14
 
